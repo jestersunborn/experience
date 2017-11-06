@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: white;
+  font-family: 'Open Sans';
+  background: -webkit-gradient(linear, right bottom, left top, from(#e9e8e4), to(#e6e5e1));
+  background: -webkit-linear-gradient(bottom right, #e9e8e4, #e6e5e1);
+  background: linear-gradient(to top left, #e9e8e4, #e6e5e1);
+}
+
+header {
+  padding: 30px 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .menu .menu-item {
+  margin-left: 30px;
+  list-style: none;
+}
+
+header .menu .menu-item a {
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgba(0, 0, 0, .6);
+}
+
+header .menu .menu-item.active a {
+  font-weight: 600;
+}
+
+header .menu .menu-item.active a,
+header .menu .menu-item a:hover {
+  color: rgba(0, 0, 0, .9);
+}
+
+main {
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-left: 5px solid #ccc;
+  padding-left: 50px;
+}
+
+main .center .row {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+main .center .row:before {
+  position: absolute;
+  content: '';
+  right: 100%;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ccc;
+  -webkit-transform: translateY(-50%) translateX(-45px);
+      -ms-transform: translateY(-50%) translateX(-45px);
+          transform: translateY(-50%) translateX(-45px);
+}
+
+main .center .row span {
+  font-weight: 600;
+  color: #a9a9a9;
+}
+
+main .center .row h1 {
+  font-weight: 800;
+  color: #404040;
+  font-size: 30px;
+}
+
+main .center .row p {
+  font-weight: 600;
+  color: #4a4a4a;
+}

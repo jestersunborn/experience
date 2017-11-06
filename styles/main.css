@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: white;
+  font-family: 'Open Sans';
+  background: linear-gradient(to top left, #e9e8e4, #e6e5e1);
+}
+
+header {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+header .menu {
+  display: flex;
+}
+
+header .menu .menu-item {
+  margin-left: 30px;
+  list-style: none;
+}
+
+header .menu .menu-item a {
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgba(0, 0, 0, .6);
+}
+
+header .menu .menu-item.active a {
+  font-weight: 600;
+}
+
+header .menu .menu-item.active a,
+header .menu .menu-item a:hover {
+  color: rgba(0, 0, 0, .9);
+}
+
+main {
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+main .center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 5px solid #ccc;
+  padding-left: 50px;
+}
+
+main .center .row {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+main .center .row:before {
+  position: absolute;
+  content: '';
+  right: 100%;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ccc;
+  transform: translateY(-50%) translateX(-45px);
+}
+
+main .center .row span {
+  font-weight: 600;
+  color: #a9a9a9;
+}
+
+main .center .row h1 {
+  font-weight: 800;
+  color: #404040;
+  font-size: 30px;
+}
+
+main .center .row p {
+  font-weight: 600;
+  color: #4a4a4a;
+}
